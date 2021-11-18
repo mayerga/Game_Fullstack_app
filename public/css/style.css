@@ -10,18 +10,24 @@ html {
   font-size: 62.5%; /* es lo mismo que 1.6rem. 1rem siempre será 10px */
 }
 
+/*https://uigradients.com/#TaranTado*/
+:root {
+  --primary: #23074d;
+  --secondary: #cc5333;
+}
+
 body {
-	background: #ffd6ba;
+	background: linear-gradient(135deg, var(--primary), var(--secondary));
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
 }
 
 .navbar {
-  background-color: #bee3db;
+  background-color: #555b6e;
 }
 
 .navbar a {
-  color: #555b6e;
+  color: #faf9f9;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -30,6 +36,9 @@ body {
   margin: 2rem;
 }
 
+.main-container{
+  
+}
 /* CONTENEDORES DEL MAIN */
 
 .contenedor {
@@ -86,7 +95,8 @@ body {
 
 .card .textos {
 	height: 100%;
-  font-size: medium;
+  font-weight: normal;
+  font-size: 1.5rem;
 
   /* -- FLEXBOX -- */
   display: flex;
@@ -96,6 +106,27 @@ body {
   /* -- GRID -- */
   /* display: grid;
   grid-template-rows: 1fr auto; */
+
+  /* PRUEBA */
+  /* font-weight: 500;
+  font-size: 1.5rem;
+  line-height: normal;
+  background: rgba(69, 66, 71, 0.267);
+  color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  padding: 1.5rem; */
+
+}
+
+.card .textos h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: normal;
+  background: rgba(69, 66, 71, 0.548);
+  color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  padding: 1.5rem;
 }
 
 .card .textos h3{
@@ -122,6 +153,17 @@ body {
   align-items: center; */
 }
 
+.banner h3{
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: normal;
+  background: rgba(69, 66, 71, 0.548);
+  color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  padding: 1.5rem;
+}
+
 .banner ul {
 	list-style: none;
 }
@@ -146,15 +188,15 @@ body {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 480px) {
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 768px) {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1024px) {
 
 }
 
