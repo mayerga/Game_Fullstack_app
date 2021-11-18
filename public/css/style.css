@@ -1,0 +1,161 @@
+/* tengo que reiniciar el margin y padin y el estilo enn box-sizing para no tener problemas con los contenedores
+y poner el tamaño de la fuente en 62-5% */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* es lo mismo que 1.6rem. 1rem siempre será 10px */
+}
+
+body {
+	background: #ffd6ba;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  background-color: #bee3db;
+}
+
+.navbar a {
+  color: #555b6e;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.nav-link {
+  margin: 2rem;
+}
+
+/* CONTENEDORES DEL MAIN */
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+
+  /* -- FLEXBOX -- */
+  /*display: flex;
+  gap: 2rem;*/
+
+  /* -- GRID -- */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+.contenedor-conciertos {
+
+  /* -- FLEXBOX -- */
+  /*width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;*/
+
+  /* -- GRID -- */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+
+  /* -- FLEXBOX -- */
+  /*width: calc(33.33% - 2rem);*/
+
+  /* -- GRID -- */
+
+}
+
+.card .textos {
+	height: 100%;
+  font-size: medium;
+
+  /* -- FLEXBOX -- */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* -- GRID -- */
+  /* display: grid;
+  grid-template-rows: 1fr auto; */
+}
+
+.card .textos h3{
+  font-size: larger;
+}
+
+.banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+  font-size: larger;
+
+  /* -- FLEXBOX -- */
+  /* width: 30%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* -- GRID -- */
+  /* display: grid;
+  grid-template-rows: auto auto auto;
+  align-items: center; */
+}
+
+.banner ul {
+	list-style: none;
+}
+
+.banner ul li {
+	margin: 15px;
+	font-weight: bold;
+  font-size: medium;
+}
+
+.banner .boton {
+	background: #FFD600;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width: 700px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+/* CONTENEDORES DEL MAIN */
