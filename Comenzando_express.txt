@@ -1,0 +1,15 @@
+http methods:
+
+- get: Get information
+- put: change information
+- post: post information or add information
+- delete: delete information
+
+-------
+Lo primero que hago es abrir la terminal (Control + shift + P) e inserto
+ npm init -y (Creará el package.json)
+
+En este último archivo se coloca toda la información que se conoce sobre
+el proyecto. 
+
+Ahora instalo express: npm i express
