@@ -1,0 +1,38 @@
+http methods:
+
+- get: Get information
+- put: change information
+- post: post information or add information
+- delete: delete information
+
+-------
+Lo primero que hago es abrir la terminal (Control + shift + P) e inserto
+ npm init -y (Creará el package.json)
+
+En este último archivo se coloca toda la información que se conoce sobre
+el proyecto. 
+
+Ahora instalo express: npm i express
+
+Para instalar nodemon y no tener que parar e iniciar constantemente
+nodejs, instalo nodemon: npm i -D (dependencies)  nodemon. dependencies
+porque es de developer, no de producción.
+
+Me vooy a package.json y en scripts creo dos líneas:
+1. "start": "node index" (Para ejcutar node en index.js)
+2. "dev": "nodemon index" (constantemente verá node index).
+
+Para cargar un html hacemos:
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+Pero no es lo ideal porque deberíamos poner manualmente cada página
+en particular con rutas separadas.
+
+if you want just a static server that serves just html, css, stuff like 
+that. Then Express actually comes with functionality to make a certain 
+folder static folder and we want to make this public folder static. we 
+don't even have to do this. I'm just gonna actually going to just get 
+read of that for now and let's go ahead and set a static folder
+
